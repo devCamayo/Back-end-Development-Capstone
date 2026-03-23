@@ -9,12 +9,23 @@ Este es el proyecto final del curso IBM Back-End Development. Es una aplicación
 ## 🚀 Configuración del Entorno
 
 ### Requisitos Previos
-- **Python 3.9.x** (versión específica: 3.9.18 o superior)
+- **Python 3.9.18** (versión exacta: 3.9.18)
 - **Git** (para control de versiones)
 - **pip** (gestor de paquetes de Python)
 - **SQLite** (base de datos por defecto)
 
-### Creación del Entorno Virtual
+### Creación a partir de la Plantilla
+
+Este proyecto ha sido creado siguiendo la plantilla estándar del curso IBM Back-End Development. La estructura del proyecto incluye:
+
+- `manage.py` - Script de gestión de Django
+- `capstone/` - Configuración principal del proyecto
+- `songs/` - Aplicación para gestión de canciones
+- `photos/` - Aplicación para galería de fotos
+- `concerts/` - Aplicación para conciertos
+- `templates/` - Plantillas HTML
+
+### Configuración del Entorno Virtual
 
 Sigue estos pasos para configurar el entorno de desarrollo:
 

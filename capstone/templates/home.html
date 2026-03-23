@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rock Stars - Banda de Rock</title>
+    <title>Djirection - Official Band Website</title>
     <style>
         * {
             margin: 0;
@@ -112,6 +112,18 @@
             color: #ffd700;
         }
         
+        .achievements {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .achievements li {
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        
         footer {
             text-align: center;
             padding: 20px;
@@ -126,48 +138,69 @@
         <header>
             <nav>
                 <div class="logo">
-                    <h1>🎸 {{ band_name }}</h1>
+                    <h1>🎸 Djirection</h1>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/songs/">Canciones</a></li>
-                    <li><a href="/photos/">Fotos</a></li>
-                    <li><a href="/concerts/">Conciertos</a></li>
-                    <li><a href="/admin/">Admin</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/songs/">Songs</a></li>
+                    <li><a href="/photos/">Photos</a></li>
+                    <li><a href="/login/">Login</a></li>
+                    <li><a href="/register/">Register</a></li>
                 </ul>
             </nav>
         </header>
         
         <div class="hero">
-            <h1>Bienvenidos a {{ band_name }}</h1>
-            <p>{{ band_description }}</p>
+            <h1>Welcome to Djirection</h1>
+            <p>A British-Irish band formed in 2023, bringing you the best of rock and alternative music.</p>
         </div>
         
         <div class="section">
-            <h2>🎵 Nuestra Historia</h2>
-            <p>{{ band_history }}</p>
+            <h2>🎵 About the Band</h2>
+            <p>Djirection is a British-Irish rock band formed in London in 2023. The band consists of four talented musicians who came together with a shared vision of creating music that transcends boundaries and connects with audiences worldwide. Known for their energetic live performances and meaningful lyrics, Djirection has quickly become one of the most exciting new acts in the British music scene.</p>
         </div>
         
         <div class="section">
-            <h2>👥 Miembros de la Banda</h2>
+            <h2>👥 Band Members</h2>
             <div class="members-grid">
-                {% for member in band_members %}
                 <div class="member-card">
-                    <h3>{{ member.name }}</h3>
-                    <p>{{ member.instrument }}</p>
+                    <h3>James O'Connor</h3>
+                    <p>Lead Vocals & Guitar</p>
                 </div>
-                {% endfor %}
+                <div class="member-card">
+                    <h3>Liam Murphy</h3>
+                    <p>Lead Guitar & Backing Vocals</p>
+                </div>
+                <div class="member-card">
+                    <h3>Thomas Walsh</h3>
+                    <p>Bass Guitar</p>
+                </div>
+                <div class="member-card">
+                    <h3>Daniel Byrne</h3>
+                    <p>Drums & Percussion</p>
+                </div>
             </div>
         </div>
         
         <div class="section">
-            <h2>📅 Próximos Eventos</h2>
-            <p>¡Mantente atento a nuestra página de conciertos para conocer las próximas fechas!</p>
+            <h2>🏆 Achievements</h2>
+            <ul class="achievements">
+                <li>🏅 Best New Artist - British Music Awards 2023</li>
+                <li>🎵 Debut Album "New Horizons" reached #1 on UK Rock Charts</li>
+                <li>🌍 Sold-out debut tour across UK and Ireland</li>
+                <li>📀 Nominated for Best Rock Album at the 2024 Brit Awards</li>
+                <li>🎸 Featured in Rolling Stone Magazine as "Ones to Watch"</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📅 Upcoming Events</h2>
+            <p>Check back soon for tour dates and new music releases. Follow us on social media for the latest updates!</p>
         </div>
         
         <footer>
-            <p>&copy; 2024 {{ band_name }} - Todos los derechos reservados</p>
-            <p>Síguenos en redes sociales para más contenido</p>
+            <p>&copy; 2024 Djirection - All rights reserved</p>
+            <p>Follow us: Twitter | Instagram | Facebook | YouTube</p>
         </footer>
     </div>
 </body>
