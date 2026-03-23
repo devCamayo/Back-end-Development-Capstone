@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('songs/', include('songs.urls')),
     path('photos/', include('photos.urls')),
+    path('concerts/', include('concerts.urls')),
 ]
